@@ -83,41 +83,8 @@ So the content in **custom-head.html** is included in **head.html**. This conten
 ```bash
 include head.html 
 ```
-Which is included in **post-Henry.html** as it contains **default.html**. We have stated in the front matter:
+Which is included in **post-Henry.html** as it contains **default.html**.
 
-```bash
-source "https://rubygems.org"
-
-
-gem "minimal-mistakes-jekyll"
-
-group :jekyll_plugins do
-  
-  gem "jekyll-seo-tag"
-  gem 'kramdown-parser-gfm'
-  gem "sprockets", "~> 3.7" 
-  gem 'jekyll-remote-theme'
-  gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-  gem 'jekyll-algolia'
-  gem 'jekyll', '~> 4.2.2'
-  gem 'jekyll-feed'
-  gem "jekyll-data"
-  
-
-gem 'duktape'
-gem 'katex'
-gem 'execjs'
-gem 'kramdown-math-katex' 
-gem "jekyll-paginate"
-gem "jekyll-gist"
-gem "jemoji"
-gem "jekyll-archives"
-gem "webrick"
-gem 'jekyll-sitemap'
-gem "jekyll-include-cache"
-
-end
-```
 And therefore $$\KaTeX$$ is included in this page!
 
 

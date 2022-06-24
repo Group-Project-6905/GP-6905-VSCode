@@ -27,5 +27,5 @@ gem "jekyll-archives"
 gem "webrick"
 gem 'jekyll-sitemap'
 gem "jekyll-include-cache"
-
+gem "faraday-retry"
 end

@@ -10,6 +10,11 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
+
+collections:
+  Founders:
+    output: true
+    permalink: /:collection/:path/
 cd dtheme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
@@ -95,10 +100,10 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : G-LRB2GYEFGK
+    anonymize_ip         : false
 
 
 # Site Author
@@ -109,24 +114,10 @@ author:
   location         : "United Kingdom, Canada"
   email            : group-project-6905@gmail.com
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://github.com/Group-Project-6905"
+    
 
 # Site Footer
 footer:
@@ -276,16 +267,3 @@ compress_html:
     envs: development
 
 
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
